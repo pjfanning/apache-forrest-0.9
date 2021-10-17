@@ -127,7 +127,7 @@ function searchMidGmane(searchID)
 function searchSite(searchID)
 {
   var searchItem = document.getElementById(searchID);
-  navigate('http://www.google.com/search?sitesearch=forrest.apache.org&q=' + searchItem.value +'&Search=Search');
+  navigate('https://www.google.com/search?sitesearch=forrest.apache.org&q=' + searchItem.value +'&Search=Search');
 }
 
 function searchSVN(searchID)

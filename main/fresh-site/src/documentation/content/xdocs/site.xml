@@ -128,6 +128,6 @@ See http://forrest.apache.org/docs/linking.html for more info
     </forrest>
     <forrest-zone href="http://forrest.zones.apache.org/"/>
     <cocoon href="http://cocoon.apache.org/"/>
-    <xml.apache.org href="http://xml.apache.org/"/>
+    <xml.apache.org href="https://xml.apache.org/"/>
   </external-refs>
 </site>

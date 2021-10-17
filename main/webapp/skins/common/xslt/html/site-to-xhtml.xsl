@@ -174,19 +174,19 @@ footer, searchbar, css etc.  As input, it takes XML of the form:
               <xsl:with-param name="height" select="height"/>
             </xsl:call-template>
           </xsl:for-each>
-        </xsl:if><a href="http://validator.w3.org/check/referer">
+        </xsl:if><a href="https://validator.w3.org/check/referer">
         <img class="skin" border="0"
-            src="http://www.w3.org/Icons/valid-html401"
+            src="https://www.w3.org/Icons/valid-html401"
             alt="Valid HTML 4.01!" height="31" width="88"/></a>
       </body>
     </html>
   </xsl:template>
 <!-- Add links to any standards-compliance logos -->
   <xsl:template name="compliancy-logos">
-    <xsl:if test="$filename = 'index.html' and //skinconfig/disable-compliance-links = 'false'"><a href="http://validator.w3.org/check/referer">
+    <xsl:if test="$filename = 'index.html' and //skinconfig/disable-compliance-links = 'false'"><a href="https://validator.w3.org/check/referer">
       <img class="logoImage"
           src="{$skin-img-dir}/valid-html401.png"
-          alt="Valid HTML 4.01!" title="Valid HTML 4.01!" height="31" width="88" border="0"/></a><a href="http://jigsaw.w3.org/css-validator/check/referer">
+          alt="Valid HTML 4.01!" title="Valid HTML 4.01!" height="31" width="88" border="0"/></a><a href="https://jigsaw.w3.org/css-validator/check/referer">
       <img class="logoImage"
           src="{$skin-img-dir}/vcss.png"
           alt="Valid CSS!" title="Valid CSS!" height="31" width="88" border="0"/></a>

@@ -142,7 +142,7 @@ footer, searchbar, css etc.  As input, it takes XML of the form:
                   </xsl:when>
                   <xsl:otherwise>
 <!-- Google search -->
-                    <form method="get" action="http://www.google.com/search" target="_blank">
+                    <form method="get" action="https://www.google.com/search" target="_blank">
                       <table bgcolor="{$menu-border}" cellpadding="0" cellspacing="0" border="0" summary="search">
                         <tr>
                           <td colspan="3">
@@ -318,7 +318,7 @@ footer, searchbar, css etc.  As input, it takes XML of the form:
                       <xsl:variable name="height" select="height"/><a href="{$url}">
                       <img alt="{$name} logo" border="0">
                         <xsl:attribute name="src">
-                          <xsl:if test="not(starts-with($image, 'http://'))">
+                          <xsl:if test="(not(starts-with($image, 'http://')) and not(starts-with($image, 'https://')))">
                             <xsl:value-of select="$root"/>
                           </xsl:if>
                           <xsl:value-of select="$image"/>

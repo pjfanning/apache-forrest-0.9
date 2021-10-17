@@ -140,7 +140,7 @@
     <gump label="Apache Gump" href="http://gump.apache.org/"/>
     <cocoon label="Apache Cocoon" href="http://cocoon.apache.org/"/>
     <lenya label="Apache Lenya" href="http://lenya.apache.org/"/>
-    <xml label="Apache XML" href="http://xml.apache.org/"/>
+    <xml label="Apache XML" href="https://xml.apache.org/"/>
     <pao label="projects.apache.org" href="http://projects.apache.org/"/>
   </references>
 <!-- Uncomment this if we want aggregate HTML/PDFs for this site 
@@ -202,7 +202,7 @@
         <dispatcherView href="DispatcherView.htm" />
       </patterns>
     </corej2eepatterns>
-    <xml.apache.org href="http://xml.apache.org/">
+    <xml.apache.org href="https://xml.apache.org/">
       <commons href="commons/">
         <resolver href="components/resolver/"/>
       </commons>
@@ -222,7 +222,7 @@
     <uri-rfc href="http://zvon.org/tmRFC/RFC2396/Output/index.html"/>
     <catalog_spec href="http://www.oasis-open.org/committees/entity/spec.html"/>
 <!--<catalog_spec href="http://www.oasis-open.org/committees/entity/background/9401.html"/>-->
-    <catalog_intro href="http://xml.apache.org/commons/components/resolver/resolver-article.html"/>
+    <catalog_intro href="https://xml.apache.org/commons/components/resolver/resolver-article.html"/>
     <mail>
       <linkmaps href="http://marc.theaimsgroup.com/?l=forrest-dev&amp;m=103444028129281&amp;w=2"/>
       <semantic-linking href="http://marc.theaimsgroup.com/?l=forrest-dev&amp;m=103097808318773&amp;w=2"/>

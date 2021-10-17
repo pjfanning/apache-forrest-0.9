@@ -1086,7 +1086,7 @@ svn mkdir plugins/&n;</source></li>
             xml-site/src/documentation/content/xdocs/news.xml and record the
             announcement, and then commit the new HTML to
             xml-site/targets/forrest Note that they use forrest-0.7 to build
-            their website. See http://xml.apache.org/guidelines.html#website-top
+            their website. See https://xml.apache.org/guidelines.html#website-top
           </p></li>
         <li><p>
             Send <a href="announce_release.txt">announce_release.txt</a> as email to

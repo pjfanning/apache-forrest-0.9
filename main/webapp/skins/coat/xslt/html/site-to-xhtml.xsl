@@ -209,7 +209,7 @@ footer, searchbar, css etc.  As input, it takes XML of the form:
                     </form>
                   </xsl:when>
                   <xsl:otherwise>
-                    <form class="roundtopsmall" method="get" action="http://www.google.com/search">
+                    <form class="roundtopsmall" method="get" action="https://www.google.com/search">
                       <input type="hidden" name="sitesearch" value="{$config/search/@domain}"/>
                       <input type="text" id="query" name="q" size="25" onFocus="getBlank (this, '{$search-prompt}');">
                         <xsl:attribute name="value">
@@ -300,7 +300,7 @@ footer, searchbar, css etc.  As input, it takes XML of the form:
                     <xsl:variable name="height" select="height"/><a href="{$url}">
                     <img alt="{$name} - logo" title="{$name}" border="0">
                       <xsl:attribute name="src">
-                        <xsl:if test="not(starts-with($image, 'http://'))">
+                        <xsl:if test="(not(starts-with($image, 'http://')) and not(starts-with($image, 'https://')))">
                           <xsl:value-of select="$root"/>
                         </xsl:if>
                         <xsl:value-of select="$image"/>
@@ -376,10 +376,10 @@ footer, searchbar, css etc.  As input, it takes XML of the form:
   </xsl:template>
 <!-- Add links to any standards-compliance logos -->
   <xsl:template name="compliancy-logos">
-    <xsl:if test="$filename = 'index.html' and $config/disable-compliance-links = 'false'"><a href="http://validator.w3.org/check/referer">
+    <xsl:if test="$filename = 'index.html' and $config/disable-compliance-links = 'false'"><a href="https://validator.w3.org/check/referer">
       <img class="logoImage" 
           src="{$skin-img-dir}/valid-html401.png"
-          alt="Valid HTML 4.01!" title="Valid HTML 4.01!" style="height: 31px; width: 88px;" /></a><a href="http://jigsaw.w3.org/css-validator/check/referer">
+          alt="Valid HTML 4.01!" title="Valid HTML 4.01!" style="height: 31px; width: 88px;" /></a><a href="https://jigsaw.w3.org/css-validator/check/referer">
       <img class="logoImage" 
           src="{$skin-img-dir}/vcss.png" 
           alt="Valid CSS!" title="Valid CSS!" style="height: 31px; width: 88px;"/></a>
@@ -425,7 +425,7 @@ footer, searchbar, css etc.  As input, it takes XML of the form:
               </form>
             </xsl:when>
             <xsl:otherwise>
-              <form method="get" action="http://www.google.com/search">
+              <form method="get" action="https://www.google.com/search">
                 <input type="hidden" name="sitesearch" value="{$config/search/@domain}"/>
                 <input type="text" id="query" name="q" size="18" onFocus="getBlank (this, '{$search-prompt}');">
                   <xsl:attribute name="value">
@@ -454,7 +454,7 @@ footer, searchbar, css etc.  As input, it takes XML of the form:
               <xsl:variable name="height" select="height"/><a href="{$url}">
               <img alt="{$name} - logo" title="{$name}" border="0">
                 <xsl:attribute name="src">
-                  <xsl:if test="not(starts-with($image, 'http://'))">
+                  <xsl:if test="(not(starts-with($image, 'http://')) and not(starts-with($image, 'https://')))">
                     <xsl:value-of select="$root"/>
                   </xsl:if>
                   <xsl:value-of select="$image"/>
@@ -528,7 +528,7 @@ footer, searchbar, css etc.  As input, it takes XML of the form:
               <xsl:variable name="height" select="height"/><a href="{$url}">
               <img alt="{$name} - logo" title="{$name}" border="0">
                 <xsl:attribute name="src">
-                  <xsl:if test="not(starts-with($image, 'http://'))">
+                  <xsl:if test="(not(starts-with($image, 'http://')) and not(starts-with($image, 'https://')))">
                     <xsl:value-of select="$root"/>
                   </xsl:if>
                   <xsl:value-of select="$image"/>

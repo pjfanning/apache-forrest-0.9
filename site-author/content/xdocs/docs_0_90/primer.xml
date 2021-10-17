@@ -24,7 +24,7 @@
       Forrest is a so-called
       <link href="http://www.dictionary.com/cgi-bin/dict.pl?term=fledgling">fledgling</link>
       project that will have a broad impact on
-      <link href="http://xml.apache.org/">xml.apache.org</link> projects. This
+      <link href="https://xml.apache.org/">xml.apache.org</link> projects. This
       document helps you to better understand the vision and scope of Forrest,
       so that you learn what to expect (or not) from it, and eventually will
       help you discovering places where your contribution could be valuable to
@@ -42,7 +42,7 @@
       <title>History</title>
       <p>
         Forrest has come into existence because of the abysmal state of the
-        <link href="http://xml.apache.org/">xml.apache.org</link> website in
+        <link href="https://xml.apache.org/">xml.apache.org</link> website in
         comparison with other open source community sites such as Sourceforge.
         The old site had no consistent visual look and feel, which was largely
         due to each and every sub-project managing its own site. Furthermore,
@@ -569,7 +569,7 @@
           <th>xml.apache.org</th>
           <td>Formation of an editorial team for the main xml.apache.org website,
             working in close collaboration with the
-            <link href="http://xml.apache.org/whoweare.html">PMC</link> and the different
+            <link href="https://xml.apache.org/whoweare.html">PMC</link> and the different
             sub-project leads.</td>
         </tr>
         <tr>

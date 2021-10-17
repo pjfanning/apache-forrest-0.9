@@ -454,13 +454,13 @@ error: datatype library "http://www.w3.org/2001/XMLSchema-datatypes" not recogni
       <question>Images don't display in PDFs. How do I fix this?</question>
       <answer>
         <p>
-          Forrest uses <link href="http://xml.apache.org/fop/">Apache FOP</link>
+          Forrest uses <link href="https://xml.apache.org/fop/">Apache FOP</link>
           for rendering PDFs. FOP cannot handle all image types natively, and
           requires third-party jars to be added. FOP natively handles BMP, GIF,
           JPG, TIFF and EPS (with a few limitations). FOP can also handle SVG
           (via Batik) and PNG (see below). For details, see
           <link
-            href="http://xml.apache.org/fop/graphics.html">FOP
+            href="https://xml.apache.org/fop/graphics.html">FOP
           Graphics formats</link>
         </p>
         <p>
@@ -477,7 +477,7 @@ error: datatype library "http://www.w3.org/2001/XMLSchema-datatypes" not recogni
           <code>http://java.sun.com/products/java-media/jai</code>). For more
           info, see
           <link
-            href="http://xml.apache.org/fop/graphics.html#packages">FOP
+            href="https://xml.apache.org/fop/graphics.html#packages">FOP
           Graphics Packages</link>
         </p>
         <note>

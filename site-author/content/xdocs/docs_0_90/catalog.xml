@@ -228,9 +228,9 @@ Specify the XML Catalog file:
       <title>Further information and resources</title>
       <p>
         Forrest and Cocoon use the
-        <a href="http://xml.apache.org/commons/components/resolver/">Catalog
+        <a href="https://xml.apache.org/commons/components/resolver/">Catalog
         Entity Resolver</a> that is provided by the
-        <a href="http://xml.apache.org/commons/">Apache XML Commons</a>
+        <a href="https://xml.apache.org/commons/">Apache XML Commons</a>
         project. The resolver is packaged with the Forrest distribution at
         <code>lib/core/xml-commons-resolver-x.y.jar</code>
       </p>

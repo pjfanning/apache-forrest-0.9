@@ -53,7 +53,7 @@ Cindy
 
 At 08:40 AM 5/24/2004 -0400, Dave Brondsema wrote:
 
->The Apache Forrest project (http://xml.apache.org/forrest/) would like to use
+>The Apache Forrest project (https://xml.apache.org/forrest/) would like to use
 >some of the code included in the XSLT Cookbook.  Forrest is licensed under the
 >Apache License 2.0 (http://www.apache.org/licenses/)
 >

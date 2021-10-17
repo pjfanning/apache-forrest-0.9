@@ -38,7 +38,7 @@
       <title>HTML</title>
       <p>
         Tested using the W3C HTML Validation Service
-        (<link href="http://validator.w3.org/">validator.w3.org</link>).
+        (<link href="https://validator.w3.org/">validator.w3.org</link>).
       </p>
       <p>
         The "<code>pelt</code>" skin validates as HTML 4.0.1
@@ -50,12 +50,12 @@
     <section>
       <title>WAI</title>
       <p>
-        See <link href="http://www.w3.org/WAI/">Web Accessibility Initiative
+        See <link href="https://www.w3.org/WAI/">Web Accessibility Initiative
         (WAI)</link>
       </p>
       <p>
         "W3C WCAG - AAA Compliance" using
-        <link href="http://webxact.watchfire.com/">webxact.watchfire.com</link>
+        <link href="https://webxact.watchfire.com/">webxact.watchfire.com</link>
       </p>
       <p>
         Issues ...
@@ -70,7 +70,7 @@
       <title>CSS</title>
       <p>
         Jigsaw:
-        <link href="http://jigsaw.w3.org/css-validator/">jigsaw.w3.org</link>
+        <link href="https://jigsaw.w3.org/css-validator/">jigsaw.w3.org</link>
       </p>
       <p>
         Issues ...

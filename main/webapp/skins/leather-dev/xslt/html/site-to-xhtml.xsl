@@ -336,7 +336,7 @@ footer, searchbar, css etc.  As input, it takes XML of the form:
 		 </form>
 	      </xsl:when>
 	      <xsl:otherwise>
-                <form class="roundtopsmall" method="get" action="http://www.google.com/search"> 
+                <form class="roundtopsmall" method="get" action="https://www.google.com/search"> 
                     <input type="hidden" 
                     name="sitesearch" value="{$config/search/@domain}"/> 
                     <input type="text" id="query" name="q" size="25" value="Search the site with {$config/search/@provider}:" onFocus="getBlank (this, 'Search the site with {$config/search/@provider}:');"/>&#160; 
@@ -408,7 +408,7 @@ document.write("Last Published: " + document.lastModified);
                   <a href="{$url}">
                     <img alt="{$name} - logo" title="{$name}" border="0">
                       <xsl:attribute name="src">
-                        <xsl:if test="not(starts-with($image, 'http://'))"><xsl:value-of select="$root"/></xsl:if>
+                        <xsl:if test="(not(starts-with($image, 'http://')) and not(starts-with($image, 'https://')))"><xsl:value-of select="$root"/></xsl:if>
                         <xsl:value-of select="$image"/>
                       </xsl:attribute>
                       <xsl:attribute name="style">
@@ -477,11 +477,11 @@ document.write("Last Published: " + document.lastModified);
   <!-#- Add links to any standards-compliance logos -#->
   <xsl:template name="compliancy-logos">
     <xsl:if test="$filename = 'index.html' and $config/disable-compliance-links = 'false'">
-      <a href="http://validator.w3.org/check/referer"><img class="logoImage" 
+      <a href="https://validator.w3.org/check/referer"><img class="logoImage" 
           src="{$skin-img-dir}/valid-html401.png"
           alt="Valid HTML 4.01!" style="height: 31px; width: 88px;" /></a>
           
-      <a href="http://jigsaw.w3.org/css-validator/check/referer"><img class="logoImage" 
+      <a href="https://jigsaw.w3.org/css-validator/check/referer"><img class="logoImage" 
           src="{$skin-img-dir}/vcss.png" 
           alt="Valid CSS!" style="height: 31px; width: 88px;"/></a>
     </xsl:if>
@@ -514,7 +514,7 @@ document.write("Last Published: " + document.lastModified);
                   <a href="{$url}">
                     <img alt="{$name} - logo" title="{$name}" border="0">
                       <xsl:attribute name="src">
-                        <xsl:if test="not(starts-with($image, 'http://'))"><xsl:value-of select="$root"/></xsl:if>
+                        <xsl:if test="(not(starts-with($image, 'http://')) and not(starts-with($image, 'https://')))"><xsl:value-of select="$root"/></xsl:if>
                         <xsl:value-of select="$image"/>
                       </xsl:attribute>
                       <xsl:attribute name="style">

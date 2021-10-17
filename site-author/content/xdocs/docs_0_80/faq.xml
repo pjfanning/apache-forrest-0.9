@@ -419,13 +419,13 @@ forrest -Dproject.start-uri=live-sites.html
       <question>Images don't display in PDFs. How do I fix this?</question>
       <answer>
         <p>
-          Forrest uses <link href="http://xml.apache.org/fop/">Apache FOP</link>
+          Forrest uses <link href="https://xml.apache.org/fop/">Apache FOP</link>
           for rendering PDFs. FOP cannot handle all image types natively, and
           requires third-party jars to be added. FOP natively handles BMP, GIF,
           JPG, TIFF and EPS (with a few limitations). FOP can also handle SVG
           (via Batik!and PNG (see below). For details, see
           <link
-            href="http://xml.apache.org/fop/graphics.html">FOP
+            href="https://xml.apache.org/fop/graphics.html">FOP
           Graphics formats</link>
         </p>
         <p>
@@ -442,7 +442,7 @@ forrest -Dproject.start-uri=live-sites.html
           <code>http://java.sun.com/products/java-media/jai</code>). For more
           info, see
           <link
-            href="http://xml.apache.org/fop/graphics.html#packages">FOP
+            href="https://xml.apache.org/fop/graphics.html#packages">FOP
           Graphics Packages</link>
         </p>
         <note>
@@ -1135,7 +1135,7 @@ X [0]         /docs_0_80/upgrading_08.html  BROKEN: No pipeline matched...
 <![CDATA[
   <trail>
     <link1 name="apache" href="http://www.apache.org/"/>
-    <link2 name="xml.apache" href="http://xml.apache.org/"/>
+    <link2 name="xml.apache" href="https://xml.apache.org/"/>
     <link3 name="" href=""/>
   </trail>]]>
         </source>

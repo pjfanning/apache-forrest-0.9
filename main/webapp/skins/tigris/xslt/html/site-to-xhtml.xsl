@@ -142,7 +142,7 @@ footer, searchbar, css etc.  As input, it takes XML of the form:
                     </form>
                   </xsl:when>
                   <xsl:otherwise>
-                    <form method="get" action="http://www.google.com/search" target="_blank">
+                    <form method="get" action="https://www.google.com/search" target="_blank">
                       <select name="as_sitesearch">
                         <option value="">Search...</option>
                         <option value="{$config/search/@domain}">The <xsl:value-of select="$config/search/@name"/> site</option>
@@ -337,7 +337,7 @@ if (VERSION > 3) {
           </xsl:when>
           <xsl:otherwise>
 <!-- Google search -->
-            <form action="http://www.google.com/search" method="get" target="_blank">
+            <form action="https://www.google.com/search" method="get" target="_blank">
               <div id="searchbox" class="toolgroup">
                 <div class="label"><strong>Search</strong>
                 </div>
@@ -377,7 +377,7 @@ if (VERSION > 3) {
                   <td colspan="4" height="5" class="logos"><a href="{$url}">
                     <img alt="{$name} - logo" title="{$name}" border="0">
                       <xsl:attribute name="src">
-                        <xsl:if test="not(starts-with($image, 'http://'))">
+                        <xsl:if test="(not(starts-with($image, 'http://')) and not(starts-with($image, 'https://')))">
                           <xsl:value-of select="$root"/>
                         </xsl:if>
                         <xsl:value-of select="$image"/>
@@ -471,7 +471,7 @@ if (VERSION > 3) {
           <a href="{$url}">
             <img alt="{$name} - logo" title="{$name}" border="0">
               <xsl:attribute name="src">
-                <xsl:if test="not(starts-with($image, 'http://'))"><xsl:value-of select="$root"/></xsl:if>
+                <xsl:if test="(not(starts-with($image, 'http://')) and not(starts-with($image, 'https://')))"><xsl:value-of select="$root"/></xsl:if>
                 <xsl:value-of select="$image"/>
               </xsl:attribute>
               <xsl:if test="$width"><xsl:attribute name="width"><xsl:value-of select="$width"/></xsl:attribute></xsl:if>

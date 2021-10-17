@@ -69,6 +69,6 @@ See http://forrest.apache.org/docs/linking.html for more info
       <dtd-docs href="docs/dtd-docs.html"/>
     </forrest>
     <cocoon href="http://cocoon.apache.org/"/>
-    <xml.apache.org href="http://xml.apache.org/"/>
+    <xml.apache.org href="https://xml.apache.org/"/>
   </external-refs>
 </site>

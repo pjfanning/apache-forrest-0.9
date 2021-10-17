@@ -112,13 +112,13 @@
   </community>
 
   <references label="References">
-    <gump label="Apache Gump" href="http://gump.apache.org/"/>
-    <cocoon label="Apache Cocoon" href="http://cocoon.apache.org/"/>
+    <gump label="Apache Gump" href="https://gump.apache.org/"/>
+    <cocoon label="Apache Cocoon" href="https://cocoon.apache.org/"/>
   </references>
 
   <external-refs>
     <mail-archive href="http://marc.theaimsgroup.com"/>
-    <xml.apache.org href="http://xml.apache.org/">
+    <xml.apache.org href="https://xml.apache.org/">
       <commons href="commons/">
         <resolver href="components/resolver/"/>
       </commons>
@@ -142,7 +142,7 @@
       </p>
       <ul>
         <li>The root element must be "site", and normal content should be in the
-          namespace <code>http://apache.org/forrest/linkmap/1.0</code> (Feel
+          namespace <code>https://apache.org/forrest/linkmap/1.0</code> (Feel
           free to mix in your own content (RDF, dublin core, etc) under new
           namespaces)</li>
         <li>Element names are used as identifiers.  The "<code>foo</code>" in
@@ -155,7 +155,7 @@
           are not displayed in the menu.</li>
         <li>Elements below <code>external-refs</code> are mapped to the
           "<code>ext:</code>" scheme.  So "<code>ext:commons/resolver/</code>" becomes
-          "<code>http://xml.apache.org/commons/resolver/</code>"</li>
+          "<code>https://xml.apache.org/commons/resolver/</code>"</li>
       </ul>
       <p>
         See another <link href="site:faq/site-xml">explained example</link>.
@@ -212,7 +212,7 @@
         </p>
         <source>
 <![CDATA[
-<tab id="apache" label="XML Apache" href="http://xml.apache.org/"/>
+<tab id="apache" label="XML Apache" href="https://xml.apache.org/"/>
         ]]>
         </source>
         <p>
@@ -372,7 +372,7 @@
             corresponding elements in &s; that have href attributes which match
             the relevant path.
             See
-            <link href="http://www.mail-archive.com/user%40forrest.apache.org/msg01750.html">email explanation</link>.
+            <link href="https://www.mail-archive.com/user%40forrest.apache.org/msg01750.html">email explanation</link>.
           </li>
           <li>
             When the tab points to a directory, then to make the tab highlighted
@@ -522,7 +522,7 @@
   ...
   <external-refs>
     <mail-archive href="http://marc.theaimsgroup.com"/>
-    <xml.apache.org href="http://xml.apache.org/">
+    <xml.apache.org href="https://xml.apache.org/">
       <commons href="commons/">
         <resolver href="components/resolver/"/>
       </commons>
@@ -534,7 +534,7 @@
           <p>
             As an example, &lt;a href="ext:commons/resolver"&gt; generates the
             link
-            <link href="ext:commons/resolver">http://xml.apache.org/commons/components/resolver/</link>
+            <link href="ext:commons/resolver">https://xml.apache.org/commons/components/resolver/</link>
           </p>
           <p>
             The general rules of &s; and "<code>site:</code>" linking apply.
@@ -598,7 +598,7 @@
             <tr>
               <td>search</td>
               <td>search:&lt;searchterm></td>
-              <td><code>http://www.google.com/search?q=searchterm</code>
+              <td><code>https://www.google.com/search?q=searchterm</code>
               </td>
               <td>Link to set of results from a search engine</td>
             </tr>
