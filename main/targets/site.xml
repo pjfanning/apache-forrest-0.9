@@ -30,7 +30,8 @@
                        if="project.content.present"
                        description="* Generates a static HTML website for this project">
     <sequential>
-      <parallel>
+      <!-- POI fix -->
+      <!-- parallel -->
         <property name="project.followLinks" value="true"/>
         <java classname="org.apache.cocoon.Main"
           fork="true"
@@ -39,7 +40,10 @@
           failonerror="false"
           resultproperty="buildResult">
           <jvmarg line="${forrest.jvmargs}"/>
+          <!-- POI fix -->
+          <!--
           <jvmarg value="-Djava.endorsed.dirs=${forrest.endorsed.lib-dir}${path.separator}${java.endorsed.dirs}"/>
+          -->
           <jvmarg value="-Dorg.apache.cocoon.core.LazyMode=true"/>
           <arg value="--logLevel=${project.debuglevel}"/>
           <arg value="--Logger=${project.logger}"/>
@@ -52,6 +56,8 @@
           <arg value="--followLinks=${project.followLinks}"></arg>
           <arg value="${project.start-uri}"/>
           <classpath>
+            <!-- POI fix -->
+            <pathelement path="${forrest.endorsed.lib-dir}${path.separator}${java.endorsed.dirs}"/>
             <path refid="forrest.cp"/>
           </classpath>
           <syspropertyset>
@@ -173,7 +179,7 @@ Cocoon will report the status of each document:
   - in column 1: *=okay X=brokenLink ^=pageSkipped (see FAQ).
   </echo>
         </sequential>
-      </parallel>
+      <!-- /parallel -->
       <echo level="info">
   Copying broken links file to site root.
       </echo>
